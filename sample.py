@@ -24,7 +24,7 @@ end
 endmodule
 ''')#writing the tb file
 file1.close()#close the tb file
-#make sure cla_adder1.v and clatb.v are in the same folder as this python script
+#make sure cla_adder1.v and Sample.py are in the same folder as this python script
 os.system("iverilog -o cla cla_adder1.v clatb.v")#executing this command gives us the executable "cla"
 os.system("vvp cla>result.txt")#direct the output to "result.txt" file
 
